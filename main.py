@@ -1,7 +1,7 @@
 # This is a sample Python script.
 
 from hello_world import HelloWorld
-from chapter_1 import One_One, One_Two
+from chapter_1 import One_One, One_Two, One_Three
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -18,5 +18,7 @@ if __name__ == '__main__':
     print('hello is a permutation of world:  {}'.format(One_Two.CheckPermutation().is_permutation('hello', 'world')))
     print('hello is a permutation of Hello:  {}'.format(One_Two.CheckPermutation().is_permutation('hello', 'Hello')))
     print('Hello World is a permutation of HWeol rllod:  {}'.format(One_Two.CheckPermutation().is_permutation('Hello World', 'HWeol rllod')))
+    print()
+    print(One_Three.URLify().urlify('Hello World Hi         ', 14))
 
 
