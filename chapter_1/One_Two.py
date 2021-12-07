@@ -31,6 +31,9 @@ class CheckPermutation:
 
         #  Here we check the number of times each character was seen
         for s in seen_1:
+            if s not in seen_2:
+                return False
+
             if seen_1[s] != seen_2[s]:
                 return False
 
