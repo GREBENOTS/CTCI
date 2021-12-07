@@ -5,13 +5,12 @@ additional data structures?
 
 
 class IsUnique:
-    def __init__(self, s):
-        self.target_string = s
+    def __init__(self):
+        self.target_string = ''
 
     # Total time complexity O(n)
-    def is_unique(self):
-        unique = True
-
+    def is_unique(self, s):
+        self.target_string = s
         seen = set([])  # Using a hash set because of O(1) retrieval
         for c in self.target_string:
             if c in seen:
