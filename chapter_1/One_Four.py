@@ -13,9 +13,13 @@ class PalindromePermutation:
     def __init__(self):
         self.target_string = ''
 
+    def strip_and_lower(self, s):
+        return s.lower().replace(' ', '')
+
     def is_palindrome(self, s):
+        self.target_string = self.strip_and_lower(s)
         # if length is odd, remove middle character
-        char_array = list(s)
+        char_array = list(self.target_string)
         length = len(char_array)
         if length % 2 == 1:
             char_array.pop(length // 2)  # This will always round down, giving the correct index for middle
@@ -34,13 +38,19 @@ class PalindromePermutation:
 
         return True
 
+    def is_permutation(self, s):
+        self.target_string = self.strip_and_lower(s)
+        mapping = {}
+        for c in self.target_string:
+            if c not in mapping:
+                mapping[c] = 0
+            mapping[c] += 1
 
-        pass
-
-    def is_permutation(self):
-        # maybe?
-        pass
-
-
-
-
+        odd_found = False
+        for element in mapping:
+            if mapping[element] % 2 == 1:
+                if not odd_found:
+                    odd_found = True
+                else:
+                    return False
+        return True

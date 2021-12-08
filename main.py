@@ -23,5 +23,5 @@ if __name__ == '__main__':
     print(One_Three.URLify().urlify('Hello World Yes No Maybe               ', 24))
     print()
     print()
-    print(One_Four.PalindromePermutation().is_palindrome('tacocat'))
+    print(One_Four.PalindromePermutation().is_permutation('atcocta'))
 
