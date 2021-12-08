@@ -1,7 +1,7 @@
 # This is a sample Python script.
 
 from hello_world import HelloWorld
-from chapter_1 import One_One, One_Two, One_Three
+from chapter_1 import One_One, One_Two, One_Three, One_Four
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -21,5 +21,7 @@ if __name__ == '__main__':
     print()
     print(One_Three.URLify().urlify('One Two Hi         ', 10))
     print(One_Three.URLify().urlify('Hello World Yes No Maybe               ', 24))
-
+    print()
+    print()
+    print(One_Four.PalindromePermutation().is_palindrome('tacocat'))
 
