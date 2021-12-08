@@ -19,6 +19,7 @@ if __name__ == '__main__':
     print('hello is a permutation of Hello:  {}'.format(One_Two.CheckPermutation().is_permutation('hello', 'Hello')))
     print('Hello World is a permutation of HWeol rllod:  {}'.format(One_Two.CheckPermutation().is_permutation('Hello World', 'HWeol rllod')))
     print()
-    print(One_Three.URLify().urlify('Hello World Hi         ', 14))
+    print(One_Three.URLify().urlify('One Two Hi         ', 10))
+    print(One_Three.URLify().urlify('Hello World Yes No Maybe               ', 24))
 
 

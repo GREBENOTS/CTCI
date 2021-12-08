@@ -11,37 +11,36 @@ class URLify:
         self.target_string = ''
 
     def urlify(self, s, length):
-        self.target_string = list(s)
-        s_length = len(self.target_string)
+        char_list = list(s)
+        s_length = len(char_list)
 
         #  First, find the number of spaces
         num_spaces = 0
         buffer_found = False
         for i in range(s_length - 1, -1, -1):
             if not buffer_found:
-                if self.target_string[i] == ' ':
+                if char_list[i] == ' ':
                     continue
                 else:
                     buffer_found = True
-            if self.target_string[i] == ' ':
+            if char_list[i] == ' ':
                 num_spaces += 1
 
-        move_amount = num_spaces * 2  # '%20' is 2 extra characters, vs ' '
-
         #  Now, we actually do the substituting
+        num_left = num_spaces
         buffer_found = False
         for i in range(s_length - 1, -1, -1):
             if not buffer_found:
-                if self.target_string[i] == ' ':
+                if char_list[i] == ' ':
                     continue
                 else:
                     buffer_found = True
-            if self.target_string[i] != ' ':
-                self.target_string[i + move_amount] = self.target_string[i]
+            if char_list[i] != ' ':
+                char_list[i + (2 * num_left)] = char_list[i]
             else:
-                self.target_string[i] = '%'
-                self.target_string[i+1] = '2'
-                self.target_string[i+2] = '0'
-                move_amount -= 2
+                char_list[i + (2 * num_left)] = '0'
+                char_list[i + (2 * num_left) - 1] = '2'
+                char_list[i + (2 * num_left) - 2] = '%'
+                num_left -= 1
 
-        return self.target_string
+        return self.target_string.join(char_list)
