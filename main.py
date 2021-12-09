@@ -41,6 +41,25 @@ if __name__ == '__main__':
     print('aaaaaaaaaabbbbbbbbccccccddddeef is compressed to:  {}'.format(One_Six.StringCompression().compress('aaaaaaaaaabbbbbbbbccccccddddeef')))
     print()
     print('[Question 1.7]')
-    matrix = []
-    print('Rotating {} to:  {}'.format(One_Seven.RotateMatrix.rotate(matrix)))
+    matrix = [
+        [0, 2, 4, 6, 8],
+        [2, 4, 6, 8, 0],
+        [4, 6, 8, 0, 2]
+    ]
+    print('Rotation Before:  ')
+    One_Seven.RotateMatrix().display(matrix)
+    print('Rotation After:  ')
+    One_Seven.RotateMatrix().rotate(matrix)
+    matrix = [
+        [0, 2, 4, 6, 8],
+        [2, 4, 6, 8, 0],
+        [4, 6, 8, 0, 2],
+        [6, 8, 0, 2, 4],
+        [8, 0, 2, 4, 6]
+    ]
+    print('Rotation Before:  ')
+    One_Seven.RotateMatrix().display(matrix)
+    print('Rotation After:  ')
+    One_Seven.RotateMatrix().rotate(matrix)
+
 
