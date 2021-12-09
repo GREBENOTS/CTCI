@@ -6,7 +6,7 @@ lowercase letters (a-z).
 """
 
 
-class StringCompressions:
+class StringCompression:
     def __init__(self):
         self.target_string = ''
 

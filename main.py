@@ -1,7 +1,7 @@
 # This is a sample Python script.
 
 from hello_world import HelloWorld
-from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five
+from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five, One_Six
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -34,4 +34,7 @@ if __name__ == '__main__':
     print('pale is one edit away from bake:  {}'.format(One_Five.OneAway().is_one_away('pale', 'bake')))
     print('aaaa is one edit away from abaa:  {}'.format(One_Five.OneAway().is_one_away('aaaa', 'abaa')))
     print('aaaa is one edit away from abaaa:  {}'.format(One_Five.OneAway().is_one_away('aaaa', 'abaaa')))
+    print()
+    print('[Question 1.6]')
+    print('aabcccccaaa is compressed to:  {}'.format(One_Six.StringCompression().compress('aabcccccaaa')))
 
