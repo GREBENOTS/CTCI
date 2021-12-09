@@ -37,4 +37,6 @@ if __name__ == '__main__':
     print()
     print('[Question 1.6]')
     print('aabcccccaaa is compressed to:  {}'.format(One_Six.StringCompression().compress('aabcccccaaa')))
+    print('abc is compressed to:  {}'.format(One_Six.StringCompression().compress('abc')))
+    print('aaaaaaaaaabbbbbbbbccccccddddeef is compressed to:  {}'.format(One_Six.StringCompression().compress('aaaaaaaaaabbbbbbbbccccccddddeef')))
 

@@ -10,16 +10,26 @@ class StringCompression:
     def __init__(self):
         self.target_string = ''
 
-    # Total time complexity O(n)
     def compress(self, s):
-        self.target_string = s
-        seen = set([])  # Using a hash set because of O(1) retrieval
-        for c in self.target_string:
-            if c in seen:
-                return False
-            seen.add(c)
-        return True
+        char_array = list(s)
 
+        current = char_array[0]
+        last = current
+        repeat_count = 0
+        for c in char_array:
+            if c == current:
+                repeat_count += 1
+                last = current
+                current = c
+                continue
+            else:
+                added_string = ''.join([last, str(repeat_count)])
+                self.target_string = ''.join([self.target_string, added_string])
+                repeat_count = 1
+                last = c
+                current = c
+        else:  # If there isn't a break, do this last.  (I think this is a bad pattern, but it works I guess)
+            added_string = ''.join([last, str(repeat_count)])
+            self.target_string = ''.join([self.target_string, added_string])
 
-
-
+        return self.target_string if len(self.target_string) < len(s) else s
