@@ -8,7 +8,6 @@ class ZeroMatrix:
     def __init__(self):
         self.target_matrix = []
 
-    # Total time complexity O(n)
     def zero_matrix(self, m):
         pass
 
