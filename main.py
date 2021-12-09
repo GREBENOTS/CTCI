@@ -1,7 +1,7 @@
 # This is a sample Python script.
 
 from hello_world import HelloWorld
-from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five, One_Six, One_Seven
+from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five, One_Six, One_Seven, One_Eight
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -62,5 +62,7 @@ if __name__ == '__main__':
     print('Rotation After:  ')
     One_Seven.RotateMatrix().rotate(matrix)
 
-    print('[Question 1.7]')
+    print('[Question 1.8]')
+    One_Eight.ZeroMatrix().zero_matrix()
+
 
