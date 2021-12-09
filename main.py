@@ -1,7 +1,7 @@
 # This is a sample Python script.
 
 from hello_world import HelloWorld
-from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five, One_Six
+from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five, One_Six, One_Seven
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -39,4 +39,8 @@ if __name__ == '__main__':
     print('aabcccccaaa is compressed to:  {}'.format(One_Six.StringCompression().compress('aabcccccaaa')))
     print('abc is compressed to:  {}'.format(One_Six.StringCompression().compress('abc')))
     print('aaaaaaaaaabbbbbbbbccccccddddeef is compressed to:  {}'.format(One_Six.StringCompression().compress('aaaaaaaaaabbbbbbbbccccccddddeef')))
+    print()
+    print('[Question 1.7]')
+    matrix = []
+    print('Rotating {} to:  {}'.format(One_Seven.RotateMatrix.rotate(matrix)))
 
