@@ -1,7 +1,7 @@
 # This is a sample Python script.
 
 from hello_world import HelloWorld
-from chapter_1 import One_One, One_Two, One_Three, One_Four
+from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -19,9 +19,19 @@ if __name__ == '__main__':
     print('hello is a permutation of Hello:  {}'.format(One_Two.CheckPermutation().is_permutation('hello', 'Hello')))
     print('Hello World is a permutation of HWeol rllod:  {}'.format(One_Two.CheckPermutation().is_permutation('Hello World', 'HWeol rllod')))
     print()
-    print(One_Three.URLify().urlify('One Two Hi         ', 10))
-    print(One_Three.URLify().urlify('Hello World Yes No Maybe               ', 24))
+    print('[Question 1.3]')
+    print('One Two Hi, becomes:  {}'.format(One_Three.URLify().urlify('One Two Hi         ', 10)))
+    print('Hello World Yes No Maybe, becomes:  {}'.format(One_Three.URLify().urlify('Hello World Yes No Maybe               ', 24)))
     print()
+    print('[Question 1.4]')
+    print('tacocat is a permutation of a palindrome:  {}'.format(One_Four.PalindromePermutation().is_permutation('tacocat')))
+    print('atcocta is a permutation of a palindrome:  {}'.format(One_Four.PalindromePermutation().is_permutation('atcocta')))
     print()
-    print(One_Four.PalindromePermutation().is_permutation('atcocta'))
+    print('[Question 1.5]')
+    print('pale is one edit away from ple:  {}'.format(One_Five.OneAway().is_one_away('pale', 'ple')))
+    print('pales is one edit away from pale:  {}'.format(One_Five.OneAway().is_one_away('pales', 'pale')))
+    print('pale is one edit away from bale:  {}'.format(One_Five.OneAway().is_one_away('pale', 'bale')))
+    print('pale is one edit away from bake:  {}'.format(One_Five.OneAway().is_one_away('pale', 'bake')))
+    print('aaaa is one edit away from abaa:  {}'.format(One_Five.OneAway().is_one_away('aaaa', 'abaa')))
+    print('aaaa is one edit away from abaaa:  {}'.format(One_Five.OneAway().is_one_away('aaaa', 'abaaa')))
 
