@@ -1,5 +1,5 @@
 from hello_world import HelloWorld
-from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five, One_Six, One_Seven, One_Eight
+from chapter_1 import One_One, One_Two, One_Three, One_Four, One_Five, One_Six, One_Seven, One_Eight, One_Nine
 
 #  Changed the way that I am doing this main script, since it's getting a bit unwieldy at this point
 #  Btw, this main method is not meant to be good code at all---just quick and dirty to actually use the CTCI
@@ -106,3 +106,6 @@ if __name__ == '__main__':
     print('Matrix After:  ')
     zero_matrix.display_matrix(zero_matrix.target_matrix)
     print()
+
+    print('[Question 1.9]')
+    one_nine = One_Nine.StringRotation()
