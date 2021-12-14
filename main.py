@@ -106,6 +106,4 @@ if __name__ == '__main__':
     print('Matrix After:  ')
     zero_matrix.display_matrix(zero_matrix.target_matrix)
     print()
-
-    print('[Question 1.9]')
-    one_nine = One_Nine.StringRotation()
+    print('End chapter 1')
