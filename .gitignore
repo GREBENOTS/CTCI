@@ -1,2 +1,5 @@
+csharp/bin
+csharp/.vs
+csharp/obj
 .idea
 __pycache__/
