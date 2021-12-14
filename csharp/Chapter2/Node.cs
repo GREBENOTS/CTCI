@@ -16,5 +16,24 @@ namespace csharp.Chapter2 {
             }
             n.next = end;
         }
+
+        private Node DeleteNode(Node head, int d) {
+            if (head == null) { return null; }
+
+            Node n = head;
+
+            if (n.data == d) {
+                return head.next; // Moved head
+            }
+
+            while (n.next != null) {
+                if (n.next.data == d) {
+                    n.next = n.next.next;
+                    return head; // No change
+                }
+                n = n.next;
+            }
+            return head;
+        }
     }
 }
