@@ -1,0 +1,13 @@
+/Users/tim/Development/CTCI/csharp/bin/Debug/netcoreapp3.1/csharp.deps.json
+/Users/tim/Development/CTCI/csharp/bin/Debug/netcoreapp3.1/csharp.runtimeconfig.json
+/Users/tim/Development/CTCI/csharp/bin/Debug/netcoreapp3.1/csharp.runtimeconfig.dev.json
+/Users/tim/Development/CTCI/csharp/bin/Debug/netcoreapp3.1/csharp.dll
+/Users/tim/Development/CTCI/csharp/bin/Debug/netcoreapp3.1/csharp.pdb
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.csproj.AssemblyReference.cache
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.AssemblyInfoInputs.cache
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.AssemblyInfo.cs
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.csproj.CoreCompileInputs.cache
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.dll
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.pdb
+/Users/tim/Development/CTCI/csharp/obj/Debug/netcoreapp3.1/csharp.genruntimeconfig.cache
