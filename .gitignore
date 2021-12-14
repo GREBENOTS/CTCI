@@ -1,5 +1,7 @@
 .idea
 __pycache__/
+.vs/
+bin/
 
 Skip to content
 Search or jump to…
