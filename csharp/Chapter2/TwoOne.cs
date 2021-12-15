@@ -14,7 +14,6 @@ namespace csharp.Chapter2 {
 
         public void CreateTestData() {
             // 0, 2, 4, 6, 6, 2, 8, 0, 0, 6, 4, 2
-            // Correct output should be:  0, 2, 4, 6, 8
             linkedList.InsertAtBeginning(0);
             linkedList.InsertAtEnd(2);
             linkedList.InsertAtEnd(4);
@@ -31,7 +30,9 @@ namespace csharp.Chapter2 {
 
         public void DoTheThings() {
             this.linkedList.Print();
-            this.linkedList.InsertAtIndex(4, 46);
+            this.linkedList.RemoveDupes();
+
+            // Correct output should be:  0, 2, 4, 6, 8
             this.linkedList.Print();
         }
     }

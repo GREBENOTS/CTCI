@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Runtime;
+using System.Collections.Generic;
 
 namespace csharp.Chapter2 {
     public class LinkedList {
@@ -9,8 +9,28 @@ namespace csharp.Chapter2 {
             this.head = null;
         }
 
+        public void RemoveDupes() {
+            if(this.head == null) { return; }
+
+            HashSet<int> seen = new HashSet<int>();
+            Node n = this.head;
+            int count = 0;
+            while(n != null) {
+                if(seen.Contains(n.data)) {
+                    n = n.next;
+                    this.RemoveAtIndex(count);
+                    continue;
+                } else {
+                    seen.Add(n.data);
+                }
+                n = n.next;
+                count++;
+            }
+        }
+
         public void InsertAtBeginning(int data) {
-            Node node = new Node(this.head, data);
+            Node node = new Node(null, data);
+            this.head = node;
         }
 
         public void InsertAtEnd(int data) {
@@ -94,14 +114,5 @@ namespace csharp.Chapter2 {
                 n = n.next;
             }
         }
-
-        //public void Append(int d) {
-        //    Node end = new Node(d);
-        //    Node n = this;
-        //    while(n.next != null) {
-        //        n = n.next;
-        //    }
-        //    n.next = end;
-        //}
     }
 }
