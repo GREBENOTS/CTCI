@@ -8,7 +8,7 @@ namespace csharp {
             TwoOne twoOne = new TwoOne();
 
             twoOne.CreateTestData();
-            twoOne.PrintNodes();
+            twoOne.DoTheThings();
         }
     }
 }
